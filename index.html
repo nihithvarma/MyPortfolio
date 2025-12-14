@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/40dd5d518d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image.png" class="logo">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- <i class="fa-solid fa-xmark"></i> for mobile screen -->
+                </ul>
+                <!-- <i class="fa-solid fa-bars"></i> for mobile screen -->
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi,I'm <span>Nihith</span><br></h1>
+            </div>
+        </div>
+    </div>
+
+<!---------------------------About------------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="backgroundimage.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me <i class="fa-duotone fa-solid fa-address-card"></i></h1>
+                <p>Hello! I'm Nihith, a dedicated software developer with a strong focus on collaborative problem-solving and delivering high-quality solutions. Known for keen observational skills, hard work, and patience in navigating complex challenges, I am committed to continuous learning and contributing effectively to team success.
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('Internship')">Internship</p>
+                <p class="tab-links" onclick="opentab('about-projects')">Projects</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <h2><i class="fa-solid fa-brain"></i></h2>
+                <ul>
+                    <li><span>Python</span><br>Programming in Python<br><br></li>
+                    <li><span>Frontend Development</span><br>HTML,CSS,JS<br><br></li>
+                    <li><span>DSA</span><br>Data Structures and Algorithms using python<br><br></li>
+                    <li><span>AWS</span><br>Amazon Web Services fundamentals<br><br></li>
+                    <li><span>Data Science</span><br>Trained in Data Science field<br><br></li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="Internship">
+                <h2><i class="fa-duotone fa-solid fa-laptop"></i></h2>
+                <ul>
+                    <li><span>SWECHA</span><br><br>IIIT Hyderabad<br></li>
+                    <li>Worked as an intern in Swecha IIIT;
+                        Participated in development of a Telugu LLM model
+                        <br>ROLE: Data collection and preprocessing<br>
+                        DURATION: May 28th,2025 to June 25th,2025<br><br>
+                        Certificate verification at: <br>https://learning.swecha.org/mod/customcert/verify_certificate.php <br> Code:BEAnGT3ZGC<br>
+
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="about-projects">
+                <h1><i class="fa-solid fa-code"></i></h1>
+                <ul>
+                    <li><span>Sliding maze (Game)    2023</span><br>Tech used--Python, Pygame<br><br>Developed an interactive puzzle game where the player solves a maze by sliding tiles to form a correct path game where the player solves a maze by sliding tiles to form a correct path from start to end. The game was built using Python with the Pygame library, featuring a graphical interface, smooth tile animations, and logic for detecting valid moves and win conditions.<br><br></li>
+                    <li><span>Wellness wills (Webpage)  2024</span><br>Tech used--Python, JavaScript, HTML, CSS<br><br>A website that recommends healthy diets with full recipe process step by step, it also shows time taken and total ingredients present in the recipe. The recommended diets is fully based on available veggies or ingredients from the user and it also calculates the amount of exercise that user needs to do based on their height and weight to be healthy.<br><br></li>
+                    <li><span>Student college chatbot (Chatbot) 2024</span><br>Tech used--Python, JavaScript, HTML, CSS<br><br>Created a web-based chat bot designed to assist students with academic queries and college related information. The front-end was developed using HTML, CSS, and JavaScript for an interactive user interface, while the back-end was implemented in python. The chat bot could answer FAQs, provide course details.<br><br></li>
+                    <li><span>Pneumonia detection model (Model)  2025</span><br>Tech used--Python, Deep Learning, CNN<br><br>Developed a deep learning- based system to classify chest X-ray images as normal or pneumonia using Convolution Neural Network (CNN). Pre-processed image datasets built and trained a custom CNN model and evaluated performance using accuracy and loss metrics. Achieved reliable detection results that demonstrate the model’s potential to assist in early medical diagnosis.<br><br></li>
+                    <li>Current project: <br><br><span>Real time rapid accident detection system for optimizing road safety (CRISIS CONNECT) 2025</span><br><br>Under the curriculum of 6th semester, I along with a group of 4 members have been assigned to this project and prepared a conference paper and review-II document for this project.<br></li><h5>In progress</h5><h1><i class="fa-solid fa-spinner"></i><h1></h1>
+                </ul>
+            </div>
+            </div>
+            </div>
+    </div>
+</div>
+<!-----------------------Education----------------------------------->
+<div id="education">
+    <div class="container">
+    <h1 class="sub-title">My Education<i class="fa-solid fa-book"></i></h1>
+    <div class="education-list">
+        <div>
+            <h2><i class="fa-solid fa-graduation-cap"></i></h2>
+            <h3>Bachelor of Technology in Computer Science and Engineering<br><br></h3>
+            <p>Hyderabad Institute of Technology and Management(HITM), Hyderabad<br>
+               Duration: 2022 - Present<br>
+               GPA: 7.29<br><br>
+            </p>
+        </div>
+        <div>
+            <h2><i class="fa-etch fa-solid fa-building"></i></h2>
+            <h3>Intermediate (Board-TSBIE)<br><br></h3>
+            <p>Sri Chaitanya Junior College, Hyderabad<br>Duration: 2020 - 2022<br>Percentage: 87%<br><br>
+            </p>
+        </div>
+        <div>
+            <h2><i class="fa-solid fa-school"></i></h2>
+            <h3>School (SSC)<br><br></h3>
+            <p>Bhashyam Educational Institute, Hyderabad<br>Duration: 2010 - 2020<br>GPA: 10<br><br>
+            </p>
+        </div>
+    </div>
+</div>
+<!------------------------Projects----------------------------------->
+<div id="projects">
+    <div class="container">
+    <h1 class="sub-title">Projects <i class="fa-solid fa-code"></i></h1>
+    <div class="project-list">        
+        <div>
+            <h3>Sliding maze (Game) 2023<br><br></h3>
+            <div class="work">
+                <img src="slidingmaze.png">
+            </div>
+            <p>TOOLS--Python, Pygame<br><br></p>
+            <a href="#">Take a look</a>
+        </div>
+        <div>
+            <h3>Wellness wills (Webpage) 2024<br><br></h3>
+            <div class="work">
+                <img src="wellnesswillsimg.jpg">
+            </div>
+            <p>TOOLS--Python, JavaScript, HTML, CSS<br><br></p>
+            <a href="https://github.com/nihithvarma/wellness-wills">Take a look</a>
+        </div>
+        <div>
+            <h3>Student college chatbot (Chatbot) 2024<br><br></h3>
+            <div class="work">
+                <img src="aichatbotpic.jpg">
+            </div>
+            <p>TOOLS--Python, JavaScript, HTML, CSS<br><br></p>
+            <a href="#">Take a look</a>
+        </div>
+        <div>
+            <h3>Pneumonia detection model (Model) 2025<br><br></h3>
+            <div class="work">
+                <img src="pneumoniadetectionimg.jpg">
+            </div>
+            <p>TOOLS--Python, Deep Learning, CNN<br><br></p>
+            <a href="#">Take a look</a>
+        </div>
+        <div>
+            <h3>Real time rapid accident detection system for optimizing road safety (CRISIS CONNECT) 2025<br><br></h3>
+            <div class="work">
+                <img src="AccidentDetectionimg.jpg">
+            </div>
+            <a href="#">Under progress</a><i class="fa-solid fa-spinner"></i><br>
+        </div>
+    </div>
+    </div>
+</div>
+<!------------------------Contact----------------------------------->
+<div id="contact">
+    <div class="container">
+    <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me <i class="fa-solid fa-address-book"></i></h1>
+            <p><i class="fa-sharp fa-solid fa-paper-plane"></i> contact@example.com</p>
+            <p><i class="fa-sharp fa-solid fa-phone"></i> +91 9876543210</p><br>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/nihith-sri-satya-varma-gokaraju-aa7455257/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/nihithvarma"><i class="fa-brands fa-github"></i></a><br><br>
+            </div>
+            <a href="nihithfresherresume.pdf" download="Nihith_Resume.pdf" class="btn btn2">
+                Download Resume
+            </a><br>
+        </div>
+        <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                <button type="submit" class="btn btn2">Send Message</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; 2024 Nihith Varma. All rights reserved.Thank You <i class="fa-notdog fa-solid fa-heart"></i></i>.</p>
+
+    </div>
+</div>
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents"); 
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }   
+</script>
+<script>
+    let scrollTimeout;
+    
+    document.querySelectorAll('nav ul li a').forEach(link => {
+        link.addEventListener('click', () => {
+            document.body.classList.add('scrolling');
+        });
+    });
+    
+    window.addEventListener('scroll', () => {
+        clearTimeout(scrollTimeout);
+    
+        scrollTimeout = setTimeout(() => {
+            document.body.classList.remove('scrolling');
+        }, 250); // slightly longer = smoother fade-out
+    });
+    </script>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzxJz492gjeaPGcADU4mjHuQw_cLMr4OjtSeZTVZ2XhEmu7YJGMwwAt9jiZkhfjKdr5tA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg= document.getElementById("msg");
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully";
+            setTimeout(function(){
+                msg.innerHTML="";
+            },5000);
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>

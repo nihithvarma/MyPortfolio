@@ -1,0 +1,472 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Popping',sans-serif;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background: #080808;
+    color: #fff;
+
+    transition: background-color 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+/* chat gpt code 🔽 ADD THIS BELOW */
+body.scrolling {
+    background-color: #171d25;
+}
+/* chat gpt code 🔼 ADD THIS ABOVE */
+#header{ 
+    width: 100%;
+    height: 100vh;
+    background-image: url(startingimg.jpg);
+    background-size: cover;
+    background-position: left;
+}
+/* --------------------bgimg by chatgpt from here-------------------- */
+#header {
+    position: relative;
+    min-height: 140vh;          /* 🔑 image comes DOWN */
+    background: #080808;
+    overflow: hidden;
+}
+#header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(startingimg.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+#header::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(8, 8, 8, 1) 0%,      /* 🔼 top fade */
+        rgba(8, 8, 8, 0) 20%,
+        rgba(8, 8, 8, 0) 80%,
+        rgba(8, 8, 8, 1) 100%     /* 🔽 bottom fade */
+    );
+    pointer-events: none;
+    z-index: 1;
+}
+#header .container {
+    position: relative;
+    z-index: 2;
+}
+#header::before {
+    filter: brightness(0.8);
+}
+#header::before {
+    background-attachment: fixed;
+}
+
+
+
+/* --------------------bgimg by chatgpt till here-------------------- */
+.container{
+    padding: 50px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 140px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #127bea;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    
+}
+nav ul li a:hover::after{
+    width: 100%;
+    transition: 0.8s;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.header-text h1 span{
+    color: #127bea;
+}
+/*--------------------chatgpt prompts from here--------------------*/
+#header {
+    position: relative;
+}
+
+#header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 220px; /* fade height */
+    background: linear-gradient(
+        to bottom,
+        rgba(8, 8, 8, 0),
+        rgba(8, 8, 8, 1)
+    );
+    pointer-events: none;
+}
+/*--------------------chatgpt prompts till here--------------------*/
+/* --------------------about-------------------- */
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 60px;
+    color: #127bea;
+    margin-bottom: 10px;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #08f1e9;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.8s;
+}
+.tab-links.active-link::after{
+    width: 100%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #08f1e9;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+/*----------------------chatgpt prompts from here----------------------*/
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-1 {
+    position: relative;
+}
+
+.about-col-1 img{
+    -webkit-mask-image: radial-gradient(
+        ellipse at center,
+        rgba(0,0,0,1) 55%,
+        rgba(0,0,0,0) 100%
+    );
+    mask-image: radial-gradient(
+        ellipse at center,
+        rgba(0,0,0,1) 55%,
+        rgba(0,0,0,0) 100%
+    );
+}
+
+/*----------------------chatgpt prompts till here----------------------*/
+
+
+
+/* --------------------Education-------------------- */
+#education-list{
+    padding: 30px 0;
+}
+.education-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+
+}
+.education-list div{
+    background: #0e0e0e;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+}
+/*----------------projects------------------*/
+#projects{
+    padding: 30px 0;
+}
+/*----------------v chatgpt prompts from here v------------------*/
+.project-list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;   /* optional */
+    align-items: center;       /* optional */
+}
+  
+.project-list img{
+    width: 100%;
+    height: auto;              /* keeps aspect ratio */
+    max-width: 100%;
+    object-fit: contain;       /* no cropping */
+}
+  
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+  }
+  
+  
+.project-list > div {
+    background: #0f3d3a;
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 420px;   /* 🔑 adjust if needed */
+  }
+  
+  
+  
+  .work {
+    width: 100%;
+    height: 180px;          /* 🔑 same height for all images */
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 12px;
+  }
+  
+  
+  .work img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      /* uniform look */
+  }
+  
+  
+.project-list > div a {
+    margin-top: auto;
+}
+.project-list > div p {
+    min-height: 48px;
+}
+  
+  
+/*----------------^ chatgpt prompts till here ^------------------*/  
+
+.project-list{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+.project-list div{
+    background: #08f1e92b;
+    padding: 30px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.8s, transform 0.8s;
+}
+.project-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.project-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.project-list div a{
+    text-decoration: none;
+    color: #01e692;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.project-list div:hover{
+    background: #0088ff;
+    transform: translateY(-10px);
+}
+/*--------------------Contact------------------*/
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #01e692;
+    margin-right: 25px;
+}
+social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #fff;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #01e692;
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    color: #01e692;
+    background: #1b158d;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none; 
+    transition: background 0.8s, color 0.8s;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 6px;
+    background: #0e0e0e;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    resize: none;
+}
+form btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #0f3d3a;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.copyright i{
+    color: #01e692;
+}
+/* -------------CSS for mobile----------------*/ 
+/* 
+nav .fa{
+    display: none;
+}
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: url(startingimg.jpg);  
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fa{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #04b7c0;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+/* } half only done! */
+
+/* ----------------contact response---------------- */
+#msg{
+    color: #01e692;
+    margin-top: 10px;
+    display: block;
+}
+
+
+
+
+
+
+
